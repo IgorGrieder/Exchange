@@ -8,7 +8,7 @@
   </head>
   <body class="flex h-screen items-center justify-center bg-purple-400">
     <!-- Currency Box -->
-    <div class="flex flex-col items-center rounded-xl bg-white px-8 py-5">
+    <div class="flex flex-col items-center rounded-xl bg-white px-5 py-5">
       <img src="/Imgs/app-icon.svg" class="block w-60" />
       <h1 class="mb-4 font-mono text-xl font-bold uppercase">
         Currency Converter
@@ -19,18 +19,20 @@
         id="actual"
         class="w-full border-b border-purple-400 px-4 py-2 outline-none"
       />
-      <div class="mt-5 flex justify-center gap-4">
+      <div
+        class="mt-5 flex w-full flex-col gap-4 sm:flex-row sm:justify-center"
+      >
         <select
           name="from"
           id="from"
-          class="w-36 appearance-none rounded-md bg-purple-400 bg-[url(/Imgs/arrow-down.svg)] bg-contain bg-[100px] bg-no-repeat px-4 py-2"
+          class="w-full cursor-pointer appearance-none rounded-md bg-purple-400 bg-[url(/Imgs/arrow-down.svg)] bg-contain bg-[180px] bg-no-repeat px-4 py-2 sm:w-36 sm:bg-[100px]"
         >
           <option value="" selected disabled>Select</option>
         </select>
         <select
           name="to"
           id="to"
-          class="w-36 appearance-none rounded-md bg-purple-400 bg-[url(/Imgs/arrow-down.svg)] bg-contain bg-[100px] bg-no-repeat px-4 py-2"
+          class="w-full cursor-pointer appearance-none rounded-md bg-purple-400 bg-[url(/Imgs/arrow-down.svg)] bg-contain bg-[180px] bg-no-repeat px-4 py-2 sm:w-36 sm:bg-[100px]"
         >
           <option value="" selected disabled>Select</option>
         </select>
@@ -41,9 +43,9 @@
         Exchange
       </button>
       <div
+        id="show-exchange"
         class="mt-5 flex w-full items-center justify-center border border-gray-400 px-6 py-4 text-xl text-black"
       >
-        USD = BRL
       </div>
     </div>
     <script src="currency-codes.js"></script>

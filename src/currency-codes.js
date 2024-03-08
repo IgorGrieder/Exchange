@@ -33,7 +33,6 @@ const currencies = [
   'CNY',
   'COP',
   'CRC',
-  'CUC',
   'CUP',
   'CVE',
   'CZK',
